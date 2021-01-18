@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="top_menu">
+        <a class="btn btn-info" href="login.html"><i class="glyphicon glyphicon-arrow-left"></i></a>
+        <div class="room-title"></div>
+        <hr>
+        <ul class="messages list-group"></ul>
+        <form id="messageForm">
+            <div class="bottom_wrapper clearfix">
+                <i class="" id="icon-type"></i>
+                <p class="help-block typing"></p>
+                <input autofocus class="message_input_wrapper" id="messagebox" name="message" type="text"
+                    placeholder="Type your message here..." />
+                <button class="send_message" id="text" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
