@@ -12,7 +12,7 @@ mongoose.connection.on('disconnected', function() {
     process.exit(1);
 });
 
-mongoose.connection.on('error', function(err) { //any error
+mongoose.connection.on('error', function(err) {
     console.log('Mongoose connection error: ', err);
     process.exit(1);
 });
@@ -43,16 +43,16 @@ var resetPassword = new mongoose.Schema({
 });
 var otpModel = mongoose.model("otp", resetPassword);
 
-// var usersTweets = new mongoose.Schema({
-//     "name": String,
-//     "tweets": String,
-//     "createdOn": { "type": Date, "default": Date.now },
-// });
-// var tweetModel = mongoose.model("tweet", usersTweets);
+var usersTweets = new mongoose.Schema({
+    "name": String,
+    "tweets": String,
+    "createdOn": { "type": Date, "default": Date.now },
+});
+var tweetModel = mongoose.model("tweet", usersTweets);
 
 
 module.exports = {
     userModel: userModel,
     otpModel: otpModel,
-    // tweetModel: tweetModel,
+    tweetModel: tweetModel,
 }

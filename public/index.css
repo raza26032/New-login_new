@@ -31,7 +31,7 @@ img {
   margin-right: 10px;
   position: relative;
 }
-.top_menu .room-title {
+.top_menu .pName {
   text-align: center;
   color: #bcbdc0;
   font-size: 20px;
@@ -44,7 +44,7 @@ img {
     border-radius: 10px;
 }
 
-.top_menu .room-title:hover {
+.top_menu .pName:hover {
   text-align: center;
   color: #909090;
   font-size: 20px;
