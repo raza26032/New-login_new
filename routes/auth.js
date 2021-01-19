@@ -132,11 +132,11 @@ api.post("/login", (req, res, next) => {
         });
 })
 
-// api.post("/logout", (req, res, next) => {
-//     res.clearCookie('jToken')
+api.post("/logout", (req, res, next) => {
+    res.clearCookie('jToken')
 
-//     res.send("logout success");
-// })
+    res.send("logout success");
+})
 
 api.post('/forget-password', (req, res, next) => {
     if (!req.body.email) {
